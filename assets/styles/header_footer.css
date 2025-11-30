@@ -1,0 +1,283 @@
+/*  Css Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Header WebSite */
+.header {
+  width: 100%;
+  position: fixed;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+/* Part_One */
+.top_header {
+  width: 100%;
+  padding: 9px 240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: row;
+  background-color: #000000;
+  color: #fafafa;
+  font-size: 14px;
+  font-family: var(
+    --title-14px-regular-font-family,
+    "Poppins-Regular",
+    sans-serif
+  );
+  line-height: 21px;
+  font-weight: 400;
+}
+.frame_text {
+  width: 523px;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.shop_now {
+  color: #fafafa;
+  font-family: "Poppins-SemiBold", sans-serif;
+  line-height: 24px;
+  font-weight: 600;
+}
+.navigation_menu {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 107px;
+  color: black;
+  cursor: pointer;
+}
+.list_items {
+  list-style: none;
+  display: inline-block;
+  padding: 0 30px;
+  text-align: center;
+}
+.icon_menu {
+  display: flex;
+  flex: row;
+  gap: 11px;
+  justify-content: center;
+  align-items: center;
+}
+.english_one {
+  color: #fafafa;
+}
+.dropdown {
+  visibility: hidden;
+  position: absolute;
+  display: none;
+  background: white;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+.menu_items {
+  display: flex;
+  transition: all 0.5s ease;
+  clear: both;
+  margin-bottom: 15px;
+}
+.menu_items:hover {
+  text-decoration: underline;
+  text-decoration-color: #7d8184;
+  text-underline-offset: 4px;
+}
+.list_items:hover > .dropdown,
+.dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 150px;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+/* Part_Two */
+.header_main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 40px 0;
+  justify-content: space-around;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --title-16px-regular-font-family,
+    "Poppins-Regular",
+    sans-serif
+  );
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: white;
+  border-bottom: 2px solid #7d8184;
+}
+.list_header {
+  width: 300px;
+  display: flex;
+  flex: row;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.link_items {
+  color: #000000;
+  text-decoration: none;
+}
+.box_icon_input {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box_search {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_input {
+  width: 243px;
+  padding: 14px;
+  background-color: #f5f5f5;
+  outline: none;
+  border: none;
+}
+.search_icon {
+  margin-left: -32px;
+  margin-top: 6px;
+}
+.icon_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
